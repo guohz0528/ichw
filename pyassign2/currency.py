@@ -9,6 +9,7 @@ def getstr(curfrom, curto, amtfrom):
     str = doc.decode('ascii')
     return str
 
+
 def tget():
     """test getstr
     """
@@ -28,6 +29,7 @@ def explain(str):
             return cut[13]
     else:
         return 'you can exchange '+cut[3]+' for '+cut[7]
+
 
 def texp():
     """test explain
@@ -49,6 +51,7 @@ def exchange(curfrom, curto, amtfrom):
             return 'Currency amount is invalid : Currency amount should be an floating point number or an integer.'
     else:
         return 'Currency code is invalid : Currency code should be 3 capital letters that refers to a kind of currency.'
+
 
 def texc():
     """test exchange
