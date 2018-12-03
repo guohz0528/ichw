@@ -1,3 +1,10 @@
+"""currency.py: Exchange one currency for another.
+__author__ = "Haozhe Guo"
+__pkuid__  = "1800011809"
+__email__  = "guohz0528@pku.edu.cn"
+"""
+
+
 def getstr(curfrom, curto, amtfrom):
     """get a string from the url
     """
@@ -69,10 +76,17 @@ def testall():
     print("All tests passed")
 
 
-curfrom = input('the currency you want to exchange is ')
-curto = input('the currency you want to exchange for is ')
-amtfrom = input('the amount of the currency you want to exchange is ')
+def main():
+    """main module
+    """
+    curfrom = input('the currency you want to exchange is ')
+    curto = input('the currency you want to exchange for is ')
+    amtfrom = input('the amount of the currency you want to exchange is ')
 
-testall()
+    testall()
 
-print(exchange(curfrom, curto, amtfrom))
+    print(exchange(curfrom, curto, amtfrom))
+
+
+if __name__ == '__main__':
+    main()
