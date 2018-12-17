@@ -141,7 +141,7 @@ def output(m, n, a, b):
     else:
         print('There are', long, 'ways to tile the wall:')
         for p in range(long):
-            print(p, tile[p])
+            print(p, ' : ', tile[p])
 
         p = int(input('You can input the number of the tiling way you want to display.'))
         tur(m, p, mn)
